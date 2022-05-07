@@ -1,0 +1,54 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container d-flex">
+        <div class="container-left w-70">
+            <div class="logo">
+                <img src="imgs/logo_a.png" alt="logo">
+            </div>
+
+            <div class="section d-flex flex-column">
+                <div class="section-text w-100">
+                    <!--Area de recibimiento de texto-->
+                    <textarea class="recibimiento_texto" placeholder="Ingrese el texto aquí" onkeyup="javascript:this.value=this.value.toLowerCase();"></textarea>
+                    <!---------------->
+                </div>
+
+                <div class="footer d-flex flex-column w-100">
+                    <div class="info"><span></span>Sólo letras minúsculas y sín acento.</div>
+                    <div class="buttons">
+                        <button class="codificar">Codificar</button>
+                        <button class="btn-desencriptar desencriptar" id="desencriptar">
+                            <d></d>Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right d-flex flex-column w-20px">
+            <div class="div-resultado_contenido d-flex flex-column w-100 " style="display:none">
+                <textarea class="ContenidoCopiar" style="display:none"></textarea>
+                <div class="resultado" style="width: 100%">fff</div>
+                <button class="btn-copy copiar">Copiar</button>
+            </div>
+
+            <div class="contenido-inicial" >
+                <img src="imgs/resultado_imagen.png" alt="Busqueda">
+                <h3>Ningún mensaje fue encontrado.</h3>
+                <p>Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/index.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
